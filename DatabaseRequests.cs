@@ -9,7 +9,7 @@ public static class DatabaseRequests
     static string formattedDate = "";
     public static void GetAllUserQuests(int numberID)
     {
-        var querySql = $"SELECT datequest, quest, completed FROM sidequests WHERE ID_user = {numberID}";
+        var querySql = $"SELECT datequest, quest, completed FROM sidequests WHERE ID_user = {numberID} ";
 
 
         using var cmd = new NpgsqlCommand(querySql, DatabaseService.GetSqlConnection());
@@ -84,9 +84,9 @@ public static class DatabaseRequests
         cmd.ExecuteNonQuery();
     }
       
-      public static void DeleteQuest(int userID)
+      public static void DeleteQuest(int userID, string namequest)
       {
-          var querySql = $"DELETE FROM sidequests WHERE id_user = {userID}";
+          var querySql = $"DELETE FROM sidequests WHERE id_user = {userID} and datequest = {namequest}";
           using var cmd = new NpgsqlCommand(querySql, DatabaseService.GetSqlConnection());
           cmd.ExecuteNonQuery();
       }
