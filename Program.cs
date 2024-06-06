@@ -64,24 +64,7 @@ public class Program
 
 
      default:
-      
-      oneplace++;
-      if (oneplace == 2)
-      {
-       Console.WriteLine($"Подумай пожалуйста");
-      }
-      else if (oneplace == 10)
-      {
-       Console.WriteLine($"Чувак лол");
-      }
-      else if(oneplace == 11)
-      {
-       Console.WriteLine($"\nВстань мид! \nТы к**ченый? \nСтань и стой со мной, бл**ь. Финшман, ты х**ришь по 20 мм'ов в день, на**я? \nДля чего? \nОбъяснишь мне? \nТы е**ный крип, крипочек");
-      }
-      else
-      {
        Console.WriteLine($"Извините, технические шоколадки(");
-      }
       break;
 
 
