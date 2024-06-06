@@ -59,7 +59,7 @@ public class Program
        break;
       
       case "6":
-       DatabaseRequests.DeleteQuest(userID);
+       DatabaseRequests.DeleteQuest(userID, Console.ReadLine());
        break;
 
 
