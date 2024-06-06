@@ -11,7 +11,7 @@ public class Program
  {
   int oneplace = 0;
   int userID = 0;
-  string? bang1 = Console.ReadLine();
+  string bang1 = Console.ReadLine();
 
   while (bang1 != "Q")
   {
